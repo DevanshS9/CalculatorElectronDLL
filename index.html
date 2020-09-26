@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            FFI C Binding
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="background-color:rgb(29, 27, 27);">
+        <br><br><br><br>
+        <center> 
+        <h1>C binding with Electron JS</h1>
+        
+    
+        <h5>Enter First Number:<input type="text" id="number1"><br><br>
+        Enter First Number:<input type="text" id="number2"></h5><br><br><br>
+        <button id="calculate">Calculation</button><br><br><br><br>
+
+        <table border="1">
+            <tr style="background-color: skyblue;">
+                <th>Addition</th>
+                <th>Substraction</th>
+                <th>Multiplication</th>
+            </tr>
+            <tr>
+                <td>
+                    <h3 id="add"></h3>
+                </td>
+                <td>
+                    <h3 id="sub"></h3>
+                </td>
+                <td>
+                    <h3 id="mul"></h3>
+                </td>
+            </tr>
+        </table>
+    </center>
+    </body>
+    <script>
+        require('./math.js')
+    </script>
+</html>
